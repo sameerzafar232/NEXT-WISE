@@ -1,17 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Navbar from './(components)/Navbar'
-import Hero from './(components)/Hero'
-import Main from './(components)/Categories'
-import RoundCard from './(components)/Cards'
-import Demo from './(components)/Items'
-import Redmi from './(components)/Realme'
-import Offer from './(components)/Special'
-import Content from './(components)/Arrival'
-import Hello from './(components)/Sale'
-import Footer from './(components)/Footer'
-import Newsletter from './(components)/Newsletter'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -28,20 +17,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Navbar/>
-      <Hero/>
-      <Main/>
-      <RoundCard/>
-      <Demo/>
-      <Redmi/>
-      <Offer/>
-      <Content/>
-      <Hello/>
-      <Footer/>
-      <Newsletter/>
-      
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
       <body className={inter.className}>{children}</body>
     </html>
   )
